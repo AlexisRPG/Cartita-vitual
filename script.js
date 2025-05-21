@@ -48,7 +48,7 @@ function createFloatingEmoji() {
     emoji.style.animationDuration = (Math.random() * 15 + 10) + "s";
     
     document.body.appendChild(emoji);
-    setTimeout(() => emoji.remove(), 8000);
+    setTimeout(() => emoji.remove(), 15000);
 }
 
 
