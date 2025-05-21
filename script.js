@@ -10,7 +10,9 @@ const message = [
     "Luz de mi vida💝",
     "La más hermosa entre todas",
     "La única mujer que amaré",
-    "Mujer de mi vida"
+    "Mujer de mi vida",
+    "Hagame suyo😈",
+    "Te amo mucho💖"
 ];
 
 
