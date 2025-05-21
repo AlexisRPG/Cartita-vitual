@@ -7,12 +7,13 @@ const message = [
     "Lo mejor de mi vida💏",
     "Mi chica ideal🥰",
     "Tus ojos deslumbrantes🤩",
-    "Luz de mi vida💝",
+    "La luz de mi vida💝",
     "La más hermosa entre todas",
-    "La única mujer que amaré",
+    "La única mujer que amaré en mi vida",
     "Mujer de mi vida",
     "Hagame suyo😈",
-    "Te amo mucho💖"
+    "Te amo mucho💖",
+    "Mi futuro quiero esta con usted"
 ];
 
 
