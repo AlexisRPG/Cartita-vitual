@@ -1,0 +1,128 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('https://img.freepik.com/vector-gratis/fondo-dia-san-valentin-diseno-corazones-rosados-pastel_1048-21065.jpg?t=st=1747782577~exp=1747786177~hmac=80109e40c7f50260677c6f1a895e518e74d9f41f799a86687ea9e334567acc9a&w=1380') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+.message {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    font-size: 28px;
+    font-family: 'Parisienne',cursive;
+    color: #d63384;
+    font-weight: bold;
+    margin-bottom: 25px;
+    transition: transform 0.3s ease;
+    animation: bounce 1s infinite;
+    z-index: 2;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+.message:hover {
+    transform: scale(1.1);
+}
+
+.hearts {
+    position: absolute;
+    font-size: 50px;
+    color: lightpink;
+    animation: floatHearts 5s ease-in-out infinite;
+    z-index: 0;
+}
+
+@keyframes floatHearts {
+    0% { transform: translateY(0) scale(1); opacity: 1; }
+    50% { transform: translateY(-150px) scale(1.5); opacity: 0.5; }
+    100% { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+.hearts:nth-child(1) { left: 10%; top: 20%; animation-duration: 6s; }
+.hearts:nth-child(2) { left: 25%; top: 30%; animation-duration: 7s; }
+.hearts:nth-child(3) { left: 40%; top: 25%; animation-duration: 8s; }
+.hearts:nth-child(4) { left: 60%; top: 35%; animation-duration: 9s; }
+
+#bubbles-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.text-bubble {
+    position: absolute;
+    font-size: 18px;
+    font-family: 'Cursive', sans-serif;
+    color: #ff6b9d;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: floatText 8s ease-in-out forwards;
+    white-space: nowrap;
+}
+
+@keyframes floatText {
+    0% { opacity: 0; transform: scale(0.5) translateY(0px); }
+    50% { opacity: 1; transform: scale(1.2) translateY(-50px); }
+    100% { opacity: 0; transform: scale(1) translateY(-100px); }
+}
+
+.floating-emoji {
+    position: absolute;
+    font-size: 28px;
+    animation: float linear forwards;
+    opacity: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh) translateX(calc(var(--random-x) * 100px));
+        opacity: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: 100% 100%;
+        background-position: center top;
+    }
+    .message { 
+        font-size: 22px; 
+        padding: 15px;
+        margin: 15px;
+    }
+    .text-bubble {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
