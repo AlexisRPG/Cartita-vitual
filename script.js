@@ -11,7 +11,6 @@ const message = [
     "La más hermosa entre todas",
     "La única mujer que amaré en mi vida",
     "Mujer de mi vida",
-    "Hagame suyo😈",
     "Te amo mucho💖",
     "Mi futuro quiero esta con usted"
 ];
